@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "Young Serif";
+    src: url(fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(30, 54%, 90%);
+
+}
+
+.main {
+    width: 100%;
+    max-width: 800px;
+    margin: 10rem auto;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 32px;
+}
+
+img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 16px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+.text {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.prep {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    background-color: hsl(330, 100%, 98%);
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+p,
+ol,
+ul,
+.nutrition-row,
+.nut {
+    font-family: 'Outfit';
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+}
+
+.prep-time {
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.list li {
+    padding-left: 1.5rem;
+}
+
+.prep li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+li {
+    margin: 1rem;
+}
+
+h1,
+h2 {
+    font-family: 'Young Serif';
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+h2,
+.value {
+    color: hsl(14, 45%, 36%);
+}
+
+.nums {
+    color: hsl(14, 45%, 36%);
+    font-family: 'Outfit';
+}
+
+.nums,
+.bold,
+.value {
+    font-weight: 600;
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+hr {
+    margin: 0;
+    color: hsl(30, 18%, 87%);
+}
+
+.nutrition-row {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 16px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.nut {
+    padding-right: 20rem;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 500px) {
+   h1 {
+    font-size: 32px;
+   }
+   body {
+    background-color: white;
+    margin: 0;
+    border-radius: 0;
+   }
+   .main {
+    margin: 0;
+    padding: 0;
+   }
+   img {
+    width: 100vw;
+    max-width: 500px;
+    height: auto;
+    border-radius: 0;
+   }
+   .recipe {
+    margin: 1.5rem;
+   }
+   .img {
+    display: flex;
+    justify-content: center;
+   }
+
+}
+
+@media (max-width: 900px) {
+    table {
+        margin: 0 auto;
+    }
+    .nut {
+        padding: 0 4rem 0 2rem;
+    }
+}
